@@ -1,0 +1,32 @@
+/* CSS Document */
+
+body
+{
+background:#000000;
+}
+
+div#systemInformationFps
+{
+	color: white;
+	position: absolute;
+	bottom: 358px;
+	left: 1024px;
+	top: 0px;
+}
+
+div#systemInformationSize
+{
+	color: white;
+	position: absolute;
+	bottom: 377px;
+	left: 0px;
+	top: 0px;
+}
+
+span#siSize
+{
+font-size:24px;
+}
+span#siFps
+{
+font-size:24px;
