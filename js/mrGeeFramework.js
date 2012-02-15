@@ -1,10 +1,9 @@
 mrGeeFramework = (function () {
-	"use strict";
 	
-	void init(canv, width, height){
-	}
+	document.addEventListener("keypress", function (evt){
+	}, false);
 	
-	return{
-		"init": init,
-	}
+	document.addEventListener("DOMContentLoaded", function () {
+		systemInformation.setSize(systemInformation.getInformation());
+	}, true);
 })();
