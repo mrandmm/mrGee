@@ -1,9 +1,7 @@
-systemInformation = (function() {
-	"use strict";
-    var siSize = document.getElementById("siSize");
-    var siFps = document.getElementById("siFps");
-    var lastFps = 0;
-    var onFpsReport;
+mrGeeInformation = (function(){
+
+    var siSize = document.getElementById("siSize")
+	
     function getInformation() {
         var information = {};
         information.width = window.innerWidth;
@@ -25,16 +23,8 @@ systemInformation = (function() {
             siFps.textContent = info.fps;
         }
     }
-    function setOnFpsReport(handler) {
-        onFpsReport = handler;
-    }
-    function getLastFps() {
-        return lastFps;
-    }
     return {
         "setSize": setSize,
-        "getInformation": getInformation,
-        "getLastFps": getLastFps,
-        "setOnFpsReport": setOnFpsReport
+        "getInformation": getInformation
     }
 })();
